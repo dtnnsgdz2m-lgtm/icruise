@@ -50,3 +50,14 @@ button:active {
     color: white;
 
 }
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.button-group div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
