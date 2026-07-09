@@ -9,10 +9,13 @@ h1 {
     color: #FFFFFF;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #6ea8ff;
     margin: 20px 0;
-    color: #3b82f6;
-    color: #3b82f6;
+    text-shadow: 0 0 10px rgba(110, 168, 255, 0.2);
+    transition: all 0.25s ease;
+
 }
 p {
   color: #d1d5db;
@@ -30,25 +33,37 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform .2s ease;
+                background-color: .2s ease;
+                box-shadow: .2s ease;
 }
 button:hover {
     background-color: #2563eb;
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(59,130,246,.35);
 }
 button:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
+}
+.speed-value {
+    transition: color all .25s ease;
 }
 
 .dashboard {
+     transition: transform .3s ease;
+                box-shadow: .3s ease;
     width: 350px;
     margin: 50px auto;
     background:#1f2937;
     border-radius: 20px;
     padding: 30px;
     text-align: center;
-    color: white;
-
+    color: white
+   
+}
+.dashboard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
 }
 .button-group {
     display: flex;
