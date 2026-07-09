@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CruiseControl.css";
 function CruiseControl() {
     const [velocidade, setVelocidade] = useState(30);
     const aumentar10 = () => {
