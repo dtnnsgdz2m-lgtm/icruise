@@ -16,7 +16,7 @@ function CruiseControl() {
     };
 
     return (
-        <>
+        <div className="dashboard">
             <h1>iCruise powered by Pedro</h1>
             <p>Velocidade</p>
             <h2>{velocidade} km/h</h2>
@@ -34,7 +34,7 @@ function CruiseControl() {
             <button onClick={aumentar10}>+10</button>
             <button onClick={diminuir10}>-10</button>
             
-        </>
+        </div>
     );
 }
 export default CruiseControl;
