@@ -50,20 +50,94 @@ button:active {
 }
 
 .dashboard {
-     transition: transform .3s ease;
-                box-shadow: .3s ease;
-    width: 350px;
-    margin: 50px auto;
-    background:#1f2937;
-    border-radius: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
     padding: 30px;
-    text-align: center;
-    color: white
-   
+    background: #1b2330;
+    border-radius: 24px;
+    border: 1px solid #313b4d;
+    box-shadow: 0 20px 45px rgba(0,0,0,.35);
+    color: white;
 }
 .dashboard:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.gauges-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.gauge {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.gauge-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid #4b5563;
+    background: radial-gradient(circle, #222c3c 0%, #151b24 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,.5);
+}
+
+.gauge-circle h3 {
+    margin: 0;
+    color: #9ca3af;
+    letter-spacing: 2px;
+}
+
+.gauge-circle span {
+    margin-top: 12px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6ea8ff;
+}
+
+.cruise-display {
+    flex: 1.2;
+    text-align: center;
+}
+
+.subtitle {
+    color: #9ca3af;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.speed-card {
+    background: #232d3d;
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid #39465a;
+}
+
+.label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9ca3af;
+}
+
+.unit {
+    color: #d1d5db;
+    margin-top: -10px;
+}
+
+.status {
+    margin-top: 18px;
+    color: #22c55e;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 .button-group {
     display: flex;
@@ -75,4 +149,3 @@ button:active {
     justify-content: center;
     gap: 12px;
 }
-
