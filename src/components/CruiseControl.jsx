@@ -2,9 +2,16 @@ import { useState , useEffect } from "react";
 import "./CruiseControl.css";
 function CruiseControl() {
     const [velocidade, setVelocidade] = useState(30);
+    const [warningShown, setWarningShown] = useState(false);
     useEffect(() => {
         document.title = `🚗 iCruise - ${velocidade} km/h`;
-    }, [velocidade]);
+        if (velocidade > 120 && !warningShown) {
+            alert("⚠️ Excesso de velocidade");
+            setWarningShown(true);
+        } else if (velocidade <= 120) {
+            setWarningShown(false);
+        }
+    }, [velocidade, warningShown]);
     const aumentar10 = () => {
         setVelocidade(
             Math.ceil((velocidade +1) / 10) * 10
