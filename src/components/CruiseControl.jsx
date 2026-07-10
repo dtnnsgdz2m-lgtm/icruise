@@ -57,17 +57,18 @@ function CruiseControl() {
 
             <div className="button-group">
                 <div>
-                    <button onClick={() => setVelocidade(velocidade + 1)}>+1</button>
-                    <button onClick={() => {
+                     <button onClick={() => {
                         if (velocidade > 30) {
                             setVelocidade(velocidade - 1);
                         }
                     }}>-1</button>
+                    <button onClick={() => setVelocidade(velocidade + 1)}>+1</button>
                 </div>
 
                 <div>
-                    <button onClick={aumentar10}>+10</button>
                     <button onClick={diminuir10}>-10</button>
+                    <button onClick={aumentar10}>+10</button>
+                    
                 </div>
             </div>
         </div>
