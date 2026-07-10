@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import "./CruiseControl.css";
 function CruiseControl() {
     const [velocidade, setVelocidade] = useState(30);
+    useEffect(() => {
+        document.title = `🚗 iCruise - ${velocidade} km/h`;
+    }, [velocidade]);
     const aumentar10 = () => {
         setVelocidade(
             Math.ceil((velocidade +1) / 10) * 10
